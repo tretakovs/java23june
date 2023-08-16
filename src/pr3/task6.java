@@ -5,16 +5,17 @@ import java.util.Scanner;
 public class task6 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        double edge;
-        edge = s.nextDouble();
-        if (edge <= 0) {
-            System.out.print("Значение edge должно быть положительным");
+        double x;
+        double result;
+        x = s.nextDouble();
+        if (61 < x) {
+            System.out.print("Подкоренное выражение должно быть неотрицательным");
         }
-        if (edge > 0) {
-            double area;
-            area = 6 * edge * edge;
-            System.out.print(area);
-
+        if (61 >= x) {
+            result = 3 * Math.sqrt(61 - x);
+            System.out.print("Результат вычисления ");
+            System.out.printf("%.4f", result);
         }
     }
 }
+
